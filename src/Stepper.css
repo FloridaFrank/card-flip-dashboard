@@ -1,0 +1,175 @@
+.stepper-wrapper {
+    font-family       : Arial;
+    margin-top        : 15px;
+    display           : flex;
+    justify-content   : space-between;
+    /* padding        : 0.4em; */
+    width             : 85%;
+    margin            : 0 auto;
+    /* border         : 1px solid #ccc;
+    border-radius     : 7px;
+    box-shadow        : 0px 0px 7px 1px #ccc; */
+}
+
+.stepper-item {
+    position      : relative;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    flex          : 1;
+}
+
+#root>div>div.main>div>div>div:nth-child(1)>div>div>div>div.back>div>div:nth-child(2)>div.step-wrapper>div>div:nth-child(1) {
+    margin-left: -20px !important;
+}
+
+/* @media (max-width: 768px) {
+     font-size: 12px;
+ } */
+.stepper-item::before {
+    position     : absolute;
+    content      : "";
+    border-bottom: 2px solid #ffd447;
+    width        : 100%;
+    top          : 14px;
+    left         : -50%;
+    z-index      : 2;
+}
+
+.stepper-item::after {
+    position     : absolute;
+    content      : "";
+    border-bottom: 1px solid #ccc;
+    width        : 100%;
+    top          : 14px;
+    left         : 50%;
+    z-index      : 2;
+}
+
+.stepper-item .step-counter {
+    position             : relative;
+    z-index              : 5;
+    display              : flex;
+    justify-content      : center;
+    align-items          : center;
+    width                : 30px;
+    height               : 30px;
+    border-radius        : 50%;
+    background           : #F6F6F6;
+    border               : 2px solid #ffd447;
+    border-style         : double;
+    font-size            : .9em;
+    font-weight          : 500;
+    font-family          : "Inter", sans-serif;
+    /* box-shadow        : inset 6px -13px 6px -2px #ccc; */
+    /* box-shadow        :0px 0px 4px 1px #ccc; */
+}
+
+
+.style {
+    background-color   : #fff !important;
+    border             : 4px solid #fff !important;
+    /* background-color: #fff !important;
+    border             : 1px solid #eee !important;
+    border-radius      : 50% !important; */
+}
+
+.step-counter.style::after {
+    /* font-family            : sans-serif; */
+    /* content             : "✔️"; */
+    /* content             : '✓'; */
+    content                   : url(./images/green-check-mark-icon2.png);
+    font-size                 : 4px;
+    width                     : 30px;
+    height                    : 30px;
+    font-weight               : 700;
+    background-color          : #F6F6F6;
+    /* color                  : green; */
+    /* padding                : 4px; */
+
+}
+
+div.one::before {
+    content    : "1";
+    /* position: relative; */
+
+}
+
+div.one::after {
+    content         : " ";
+    position        : absolute;
+    background-color: #fff;
+    border-radius   : 8px;
+}
+
+div.two::before {
+    content : "2";
+    position: relative;
+}
+
+div.two::after {
+    content         : "";
+    position        : absolute;
+    background-color: #fff;
+    border-radius   : 8px;
+}
+
+div.three::before {
+    content : "3";
+    position: relative;
+}
+
+div.three::after {
+    content         : "";
+    position        : absolute;
+    background-color: #fff;
+    border-radius   : 8px;
+}
+
+div.four::before {
+    content : "4";
+    position: relative;
+}
+
+div.four::after {
+    content         : "";
+    position        : absolute;
+    background-color: #fff;
+    border-radius   : 8px;
+}
+
+.stepper-item.active {
+    font-weight: bold;
+}
+
+.stepper-item.complete .step-counter {
+    background-color: #fff;
+    border          : red;
+    border-style    : double;
+}
+
+.stepper-item.completed .step-counter {
+    background-color: #fff;
+    border          : #11ca7d;
+    border-style    : double;
+}
+
+.stepper-item.completed::after {
+    position     : absolute;
+    content      : "";
+    border-bottom: 1.5px solid #000;
+    width        : 100%;
+    top          : 14px;
+    left         : 50%;
+    z-index      : 3;
+}
+
+.stepper-item:first-child::before {
+    content: none;
+
+}
+
+.stepper-item:last-child::after {
+    content: none;
+
+}
