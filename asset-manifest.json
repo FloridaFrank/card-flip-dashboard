@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/card-flip-dashboard/static/css/main.f8f040da.css",
+    "main.css": "/card-flip-dashboard/static/css/main.8c5e6a75.css",
     "main.js": "/card-flip-dashboard/static/js/main.0f28ca0f.js",
     "index.html": "/card-flip-dashboard/index.html",
-    "main.f8f040da.css.map": "/card-flip-dashboard/static/css/main.f8f040da.css.map",
+    "main.8c5e6a75.css.map": "/card-flip-dashboard/static/css/main.8c5e6a75.css.map",
     "main.0f28ca0f.js.map": "/card-flip-dashboard/static/js/main.0f28ca0f.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8f040da.css",
+    "static/css/main.8c5e6a75.css",
     "static/js/main.0f28ca0f.js"
   ]
 }
