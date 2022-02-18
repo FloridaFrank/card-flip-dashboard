@@ -192,7 +192,7 @@ ul>li {
 
 
 .flippy-back {
-    background-color    : #F6F6F6;
+    background-color    : #F6F6F6 !important;
     position            : fixed !important;
     top                 : 0;
     left                : 1.5% !important;
